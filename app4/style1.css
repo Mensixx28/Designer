@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: wheat;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Controls */
+  .controls {
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 1200px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .controls select,
+  .controls input[type="text"] {
+    padding: 5px;
+    border: 1px solid white;
+  }
+  
+  .controls button {
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: red;
+  }
+  
+  /* Canvas Section */
+  .editor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  canvas {
+    border: 2px solid white;
+    max-width: 100%;
+    height: auto;
+  }

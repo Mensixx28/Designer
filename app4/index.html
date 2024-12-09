@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+        <div class="form-box Login">
+            <h2 class="animation" style="--D:0">Login</h2>
+            <form method="post" action="connlogin.php">
+                <div class="input-box animation" style="--D:1">
+                    <input type="text" name="username" required>
+                    <label for="">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--D:2">
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box animation" style="--D:3">
+                    <button class="btn" type="submit">Login</button>
+                </div>
+                <div class="regi-link animation" style="--D:4">
+                    <p>Don't have an account ? <a href="#" class="signUpLink">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-content Login">
+            <h2 class="animation" style="--D:0">WELCOME BACK!</h2>
+        </div>
+        <div class="form-box register">
+            <h2 class="animation" style="--li:17">Register</h2>
+            <form method="post" action="connect.php">
+                <div class="input-box animation" style="--li:18">
+                    <input type="text" name="username" required>
+                    <label for="">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation"style="--li:19">
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box animation"style="--li:20">
+                    <button class="btn" type="submit">Register</a></button>
+                </div>
+                <div class="regi-link animation" style="--li:21">
+                    <p>Have an account? <a href="index.html" class="signInLink">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-content register">
+            <h2 class="animation"style="--li:17">REGISTER FORM</h2>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

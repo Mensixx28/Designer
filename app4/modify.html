@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Photo Editor</title>
+  <link rel="stylesheet" href="style1.css" >
+  <link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced Photo Editor</h1>
+  </header>
+
+  <main>
+    <div class="controls">
+      <!-- File Input -->
+      <input type="file" id="fileInput" />
+
+      <!-- Buttons for functionality -->
+      <button onclick="applyGrayscale()">Grayscale Filter</button>
+      <button onclick="applySepia()">Sepia Filter</button>
+      <button onclick="resizeCanvas()">Resize</button>
+      <button onclick="startCrop()">Crop</button>
+      <button onclick="resetImage()">Reset</button>
+
+      <!-- Text Input and Button -->
+      <input
+        type="text"
+        id="textInput"
+        placeholder="Enter text to add"
+      />
+      <select id="fontSelect">
+        <option value="20px Arial">Arial</option>
+        <option value="20px Times New Roman">Times New Roman</option>
+        <option value="20px Courier New">Courier New</option>
+      </select>
+      <button onclick="addText()">Add Text</button>
+      <button><a href="home.html">Back</a></button>
+      <!-- Sticker Selector -->
+      <select id="stickerSelect">
+        <option value="">Select a sticker...</option>
+        <option value="https://img.icons8.com/emoji/48/000000/party-popper-emoji.png">Party Popper</option>
+        <option value="https://img.icons8.com/emoji/48/000000/sun-emoji.png">Sun</option>
+        <option value="https://img.icons8.com/emoji/48/000000/snowflake-emoji.png">Snowflake</option>
+        <option value="1.png">Heart</option>
+        <option value="2.png">I Love You</option>
+        <option value="3.png">Smiley</option>
+        <option value="4.png">Star</option>
+        <option value="5.png">Mountain</option>
+        <option value="10.jpeg">Sea</option>
+        <option value="7.jpeg">Sunset</option>
+        <option value="9.png">Shooting Star</option>
+        <option value="8.jpg">Alien</option>
+        
+        
+      </select>
+      <button onclick="addSticker()">Add Sticker</button>
+    </div>
+
+    <!-- Editor Canvas Section -->
+    <div class="editor-container">
+      <canvas id="photoCanvas" width="600" height="400"></canvas>
+    </div>
+  </main>
+
+  <script src="script1.js"></script>
+</body>
+</html>
